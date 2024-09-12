@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var chinni = document.createElement("h1");
+        chinni.innerText="Supraja Goddendla";
+        chinni.style.color="black";
+        chinni.style.textAlign="center";
+        chinni.style.fontSize="50px";
+       
+
+       var sum =document.createElement("h3");
+        sum.innerText="Professional Summary";
+        sum.style.color="navy";
+        sum.style.textAlign="left";
+        sum.style.fontSize="32px";
+
+        var text = document.createElement("p");
+        text.innerText="To seek a challenging position where i can utilize my skills and where i can grow myself along vth the company.";
+        text.style.color="black";
+        text.style.textAlign="left";
+        text.style.fontSize="25px";
+
+        var tal =document.createElement("h3");
+        tal.innerText="TechnicalSkills";
+        tal.style.color="brown";
+        tal.style.textAlign="left";
+        tal.style.fontSize="32px";
+
+        var ab = document.createElement("ul")
+        ab.style.paddingLeft="100px"
+
+        arr =["HTML","CSS", "Javascript"]
+        
+        for(i=0;i<arr.length;i++){
+            var li = document.createElement("li")
+            li.innerText=arr[i]
+            li.style.color="black"
+            li.style.fontSize="25px"
+            li.style.listStyleType="disc"
+            ab.appendChild(li)
+        }
+        
+        var int =document.createElement("h3");
+        int.innerText="Interests";
+        int.style.color="blue";
+        int.style.textAlign="left";
+        int.style.fontSize="32px";
+
+        var hob =document.createElement("ul")
+        hob.style.paddingLeft="100px"
+
+        arr2=["visting new places","listening","travelling"]
+
+       for(i=0;i<arr2.length;i++){
+            var li = document.createElement("li")
+            li.innerText=arr2[i]
+            li.style.color="black"
+            li.style.fontSize="25px"
+            li.style.listStyleType="disc"
+            hob.appendChild(li)
+        }
+        var dec =document.createElement("h3");
+        dec.innerText="Declaration";
+        dec.style.color="red";
+        dec.style.textAlign="left";
+        dec.style.fontSize="32px";
+
+        var dec2 = document.createElement("p");
+        dec2.innerText="I here by declare the above infois correct";
+        dec2.style.color="black";
+        dec2.style.textAlign="left";
+        dec2.style.fontSize="25px";
+
+        var signature =document.createElement("h2");
+        signature.innerText="Supraja Goddendla";
+        signature.style.color="Purple";
+       
+        signature.style.paddingLeft="190px"
+        signature.style.fontSize="32px";
+       
+
+       document.body.appendChild(chinni);
+       document.body.appendChild(sum);
+       document.body.appendChild(text);
+       document.body.appendChild(tal);
+       document.body.appendChild(ab);
+       document.body.appendChild(int);
+       document.body.appendChild(hob);
+       document.body.appendChild(dec);
+       document.body.appendChild(dec2);
+       document.body.appendChild(signature)
+       
+    </script>
+</body>
+</html>
